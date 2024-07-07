@@ -1,5 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Roboto:wght@400&family=Lora:wght@700&family=Open+Sans:wght@400&display=swap');
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: -2%;
+}
+
+nav .logo {
+    padding: 4vw 0;
+    z-index: 99;
+}
+
+.logoImg {
+    width: 10vw;
+    margin-left: -15vw;
+}
+
+/* .logo2 img {
+    width: 20vw;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+} */
+
+.links {
+    /* position: absolute; */
+    margin-right: 5vw;
+    /* top: 25vw; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0vw;
+}
+
+/* .hr {
+    position: absolute;
+    width: 100vw;
+    border-top: 2px solid black;
+    margin-top: 15vw;
+}
+
+.hr2 {
+    position: absolute;
+    width: 100vw;
+    border-top: 2px solid black;
+    margin-top: 33vw;
+} */
+
+.links a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    padding-left: 6vw;
+}
+
+.navRightLinks {
+    /* position: absolute; */
+    display: flex;
+    margin-right: -15vw;
+    gap: 2vw;
+}
+
+
 footer {
     background-color: white; /* Updated background color */
     color: #6F4E37;
