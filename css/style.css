@@ -147,6 +147,7 @@ nav .logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 20px;
 }
 
 .hr {
