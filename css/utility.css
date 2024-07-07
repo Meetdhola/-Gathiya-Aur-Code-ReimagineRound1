@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Roboto:wght@400&family=Lora:wght@700&family=Open+Sans:wght@400&display=swap');
+footer {
+    background-color: white; /* Updated background color */
+    color: #6F4E37;
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ensure footer takes full width */
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 75vw;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 150px;
+}
+
+.footer-column h4 {
+    font-family: 'Merriweather Sans', Arial, sans-serif;
+    color: #6F4E37; /* Updated text color */
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a, .link {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: black; /* Updated link color */
+    text-decoration: none;
+    position: relative; /* Added for positioning pseudo-elements */
+    transition: color 0.3s ease-in-out;
+}
+.link{
+    color: #6F4E37;
+}
+.footer-column ul li a:hover, .link:hover {
+    color: #0E8DBF;
+}
+
+.subscribe-section {
+    flex: 1 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subscribe-section h3 {
+    font-family: 'Lora', Georgia, serif;
+    color: #6F4E37; /* Updated text color */
+    margin-bottom: 10px;
+}
+
+.subscribe-section p {
+    font-family: 'Open Sans', Verdana, sans-serif;
+    margin-bottom: 10px;
+    color: black; /* Updated text color */
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border: 1px solid #6F4E37;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.subscribe-form button:hover {
+    background-color: #0E8DBF;
+}
+
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a img {
+    width: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: black; /* Updated text color */
+}
+
+.animated-coffee-seeds {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.coffee-seed {
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out;
+}
+
+.coffee-seed:hover {
+    transform: translateY(-10px) rotate(15deg);
+}
+
+.footer-column a::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/coffee-seed.svg'); /* svg color is almost #6F4E37 for footer color reference  */
+    background-size: 20px 20px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-column a:hover::before {
+    transform: translateY(-2px) translateX(-2px) rotate(-20deg);
+}
+
+/* Coffee powder animation */
+.footer-column a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: url('../assets/icons/coffee-powder.svg'); /* Assuming you have a coffee powder image */
+    background-size: cover;
+    transition: width 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.footer-column a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+@media (max-width: 450px) {
+    .footer-container{
+        margin-left: 35px;
+    }
+}
+/* Custom Scrollbar Styling */
+
+
+/* Universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #6F4E37 #f5f5f5; /* Firefox */
+}
+
+/* Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px; /* Consistent height for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6F4E37;
+    border-radius: 10px;
+    border: 3px solid #f5f5f5;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:before {
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjcyNTUgNy45MDc3NEwxMiA5Ljg0NjE1TDExLjMxMjYgMTEuNDAyOUwxMC4yNSAxMi42NzY1TDkuMzc3NDEgMTEuMzE1OUw4IDkuNTYwMjZMMC4yNSAxMi42NzY1TDYuNzQ5MzggMTUuMzE2M0wxMi4yNDkzIDEyLjY3NjVMMTQuODk5NCA5LjkwNzU0TDEwLjcyNTUgNy45MDc3NFoiIGZpbGw9IiM2RjRFMzciLz4KPC9zdmc+Cg==');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0E8DBF;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #6F4E37 #f5f5f5; /* Scrollbar thumb and track colors */
+}
+
+/* Custom scrollbar thumb for Firefox */
+*::-webkit-scrollbar-thumb:before {
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjcyNTUgNy45MDc3NEwxMiA5Ljg0NjE1TDExLjMxMjYgMTEuNDAyOUwxMC4yNSAxMi42NzY1TDkuMzc3NDEgMTEuMzE1OUw4IDkuNTYwMjZMMC4yNSAxMi42NzY1TDYuNzQ5MzggMTUuMzE2M0wxMi4yNDkzIDEyLjY3NjVMMTQuODk5NCA5LjkwNzU0TDEwLjcyNTUgNy45MDc3NFoiIGZpbGw9IiM2RjRFMzciLz4KPC9zdmc+Cg==');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Edge */
+::-ms-scrollbar {
+    width: 12px;
+    height: 5px; /* Consistent height for horizontal scrollbars */
+}
+
+::-ms-scrollbar-track {
+    background: #f5f5f5;
+}
+
+::-ms-scrollbar-thumb {
+    background: #6F4E37;
+    border-radius: 10px;
+    border: 3px solid #f5f5f5;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+::-ms-scrollbar-thumb:before {
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjcyNTUgNy45MDc3NEwxMiA5Ljg0NjE1TDExLjMxMjYgMTEuNDAyOUwxMC4yNSAxMi42NzY1TDkuMzc3NDEgMTEuMzE1OUw4IDkuNTYwMjZMMC4yNSAxMi42NzY1TDYuNzQ5MzggMTUuMzE2M0wxMi4yNDkzIDEyLjY3NjVMMTQuODk5NCA5LjkwNzU0TDEwLjcyNTUgNy45MDc3NFoiIGZpbGw9IiM2RjRFMzciLz4KPC9zdmc+Cg==');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::-ms-scrollbar-thumb:hover {
+    background: #0E8DBF;
+}
+
+div {
+    -webkit-tap-highlight-color: transparent;
+}
