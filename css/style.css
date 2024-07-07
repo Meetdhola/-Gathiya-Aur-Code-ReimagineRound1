@@ -541,6 +541,7 @@ nav .logo {
 
     .links {
         left: 10vw;
+        margin-left: 0px;
         /* sm:left-[20vw] md:right-[37vw] lg:-left-[37vw] sm:pt-[0vw] right-[9vw] pt-[20vw] gap-3  md:gap-10 */
     }
 
