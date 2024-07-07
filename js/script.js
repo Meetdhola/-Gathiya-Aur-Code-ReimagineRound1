@@ -98,11 +98,13 @@ document.addEventListener("DOMContentLoaded",function(){
         display:"block",
         duration:0.5
     })
-    const loadingScreen = document.querySelector(".loadingScreeen");
+    const loadingScreen = document.querySelector(".loadingScreen");
     const websiteContent = document.querySelector(".websiteContent");
-    if(loadingScreen.style.display=="none"){
-        websiteContent.style.opacity=1;
+    
+    if (loadingScreen && loadingScreen.style.display == "none") {
+        websiteContent.style.opacity = 1;
     }
+
     
 });
 
