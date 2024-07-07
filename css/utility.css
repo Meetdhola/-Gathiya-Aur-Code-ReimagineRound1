@@ -2,69 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Roboto:wght@400&family=Lora:wght@700&family=Open+Sans:wght@400&display=swap');
 
 nav {
-    position: relative;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: -2%;
+    padding: 10px 15vw; /* Adjust padding as needed */
 }
 
 nav .logo {
-    padding: 4vw 0;
     z-index: 99;
 }
 
 .logoImg {
-    width: 10vw;
-    margin-left: 15vw;
+    width: 150px; /* Set a fixed width */
+    margin-left: 0; /* Reset margin */
 }
 
-/* .logo2 img {
-    width: 20vw;
-    position: absolute;
-    top: 0;
-    opacity: 0;
-} */
-
 .links {
-    /* position: absolute; */
-    /* margin-right: 5vw; */
-    /* top: 25vw; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0vw;
+    gap: 2vw; /* Adjust gap as needed */
 }
-
-/* .hr {
-    position: absolute;
-    width: 100vw;
-    border-top: 2px solid black;
-    margin-top: 15vw;
-}
-
-.hr2 {
-    position: absolute;
-    width: 100vw;
-    border-top: 2px solid black;
-    margin-top: 33vw;
-} */
 
 .links a {
     text-decoration: none;
     text-transform: capitalize;
     color: black;
-    padding-left: 6vw;
+    padding: 0 1vw; /* Adjust padding as needed */
 }
-nav .links a:hover{
+
+nav .links a:hover {
     color: #0E8DBF;
 }
+
 .navRightLinks {
-    /* position: absolute; */
     display: flex;
-    margin-right: 15px;
-    margin-bottom: 25px;
-    gap: 2vw;
+    align-items: center;
+    gap: 2vw; /* Adjust gap as needed */
+}
+
+.navRightLinks img {
+    cursor: pointer;
 }
 
 
