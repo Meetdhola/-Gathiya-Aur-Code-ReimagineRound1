@@ -62,7 +62,8 @@ nav .links a:hover{
 .navRightLinks {
     /* position: absolute; */
     display: flex;
-    margin-right: 15vw;
+    margin-right: 15px;
+    margin-bottom: 25px;
     gap: 2vw;
 }
 
