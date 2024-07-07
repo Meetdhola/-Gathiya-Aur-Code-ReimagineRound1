@@ -19,6 +19,67 @@ body {
 .main{
     width: 100%;
 }
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: -2%;
+}
+
+nav .logo {
+    padding: 10vw 0;
+    z-index: 99;
+}
+
+.logoImg {
+    width: 20vw;
+    margin-left: 7vw;
+}
+
+.logo2 img {
+    width: 20vw;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.links {
+    position: absolute;
+    top: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hr {
+    position: absolute;
+    width: 100vw;
+    border-top: 2px solid black;
+    margin-top: 15vw;
+}
+
+.hr2 {
+    position: absolute;
+    width: 100vw;
+    border-top: 2px solid black;
+    margin-top: 33vw;
+}
+
+.links a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    padding-left: 6vw;
+}
+
+.navRightLinks {
+    position: absolute;
+    display: flex;
+    right: 7vw;
+    gap: 4vw;
+}
+
 .container, .subcont {
     display: flex;
     gap: 20px;
