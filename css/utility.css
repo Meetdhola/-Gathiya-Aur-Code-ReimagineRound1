@@ -227,6 +227,8 @@ footer {
     .footer-container{
         margin-left: 35px;
     }
+}
+@media (max-width: 750px) {
     nav{
         padding: 0px;
     }
