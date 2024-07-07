@@ -227,6 +227,9 @@ footer {
     .footer-container{
         margin-left: 35px;
     }
+    nav{
+        padding: 0px;
+    }
 }
 /* Custom Scrollbar Styling */
 
