@@ -56,7 +56,9 @@ nav .logo {
     color: black;
     padding-left: 6vw;
 }
-
+nav .links a:hover{
+    color: #0E8DBF;
+}
 .navRightLinks {
     /* position: absolute; */
     display: flex;
