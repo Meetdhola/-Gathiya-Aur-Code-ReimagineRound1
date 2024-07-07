@@ -340,20 +340,6 @@ nav .logo {
     transform: scaleX(0.7) scaleY(0);
 }
 
-/* page5 */
-.page5 {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    top: 0vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* background-color: #0f95ca ; */
-    /* w-full h-screen top-0 relative  flex items-center justify-center flex-col */
-}
-
 .cardSection {
     background-color: #000000;
     position: relative;
@@ -493,6 +479,55 @@ nav .logo {
     opacity: 0;
 }
 
+/* page5 */
+.page5 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 650vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #0f95ca ; */
+    /* w-full h-screen top-0 relative  flex items-center justify-center flex-col */
+}
+
+.image-container {
+    position: relative; /* To position the image inside */
+    width: 100%; /* Responsive width */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust for your image) */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2vw;
+}
+.img-content {
+    overflow: hidden;
+    border-radius: 2vw;
+    width: 90vw;
+    height: 90vw;
+}
+.image-container img {
+    /* position: absolute; */
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Or "contain" for different effects */
+}
+.image-container img {
+    transition: transform 0.3s ease; 
+    filter: blur(2px);/* Example: 0.3 seconds duration, ease-out timing */
+}
+.image-container img:hover {
+    transform: scale(1.1);
+    filter: blur(0px); /* Example: Zoom in slightly on hover */
+}
+.image-container>img:hover .img-content{
+    border-radius: 0;
+}
+
 @media screen and (min-width:720px) {
     .discountOffer {
         font-size: 1vw;
@@ -624,6 +659,28 @@ nav .logo {
     height: 100vw;
     border-radius: 50px;
     transform: scaleX(0.7) scaleY(0);
+}
+.page5 {
+    top: -50vw;
+    /* background-color: #0f95ca ; */
+    /* w-full h-screen top-0 relative  flex items-center justify-center flex-col */
+}
+
+.image-container {
+    position: relative; /* To position the image inside */
+    width: 100%; /* Responsive width */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust for your image) */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2vw;
+}
+.img-content {
+    overflow: hidden;
+    border-radius: 2vw;
+    width: 90vw;
+    height: 90vw;
 }
 
 }
@@ -853,6 +910,28 @@ nav .logo {
         transform: translateY(20%);
         opacity: 0;
         /* transition: all ease 2s; */
+    }
+    .page5 {
+        top: -100vw;
+        /* background-color: #0f95ca ; */
+        /* w-full h-screen top-0 relative  flex items-center justify-center flex-col */
+    }
+    
+    .image-container {
+        position: relative; /* To position the image inside */
+        width: 100%; /* Responsive width */
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust for your image) */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 2vw;
+    }
+    .img-content {
+        overflow: hidden;
+        border-radius: 2vw;
+        width: 30vw;
+        height: 30vw;
     }
 
 
